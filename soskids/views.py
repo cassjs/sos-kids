@@ -50,3 +50,6 @@ def lesson(request):
 
 def quiz(request):
     return render(request, 'quiz.html')
+
+def learningpath(request):
+    return render(request, 'learningpath.html')
