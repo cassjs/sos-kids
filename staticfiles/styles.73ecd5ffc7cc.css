@@ -5,7 +5,7 @@
 }
 
 .body-home {
-    background-image: url(/static/images/body-image.jpeg);
+    background-image: url("/static/images/body-image.b4d3a36edfc1.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     background-color: rgba(255,255,255,0.6);
@@ -123,13 +123,13 @@ nav > ul > div > li, nav > ul > div > li > a {
 }
 
 .welcome-block > form > input {
-    margin-top: 30px;
+    margin-top: 20px;
 }
 
 .welcome-block > form > input {
     padding: 10px 20px;
-    width: 300px;
-    height: 20px;
+    width: 200px;
+    height: 50px;
     border-radius: 20px;
     border: 2px solid black;
     font-size: 18px;

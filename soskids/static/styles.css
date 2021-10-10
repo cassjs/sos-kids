@@ -109,6 +109,32 @@ nav > ul > div > li, nav > ul > div > li > a {
     background-color: #FF2281;
 }
 
+.welcome-block > form > button {
+    margin: 20px;
+    margin-top: 50px;
+    padding: 10px 20px;
+    background-color: #FF2281;
+    color: white;
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+    border: 2px solid black;
+    font-size: 18px;
+}
+
+.welcome-block > form > input {
+    margin-top: 30px;
+}
+
+.welcome-block > form > input {
+    padding: 10px 20px;
+    width: 300px;
+    height: 20px;
+    border-radius: 20px;
+    border: 2px solid black;
+    font-size: 18px;
+}
+
 .dashboard-links {
     color: white;
 }
