@@ -22,7 +22,7 @@ Michel Nzihou
     
 * Navigate to the project folder
 
-      $ cd venture-insight
+      $ cd sos-kids
       
 * Create Virtual Environnment
 
