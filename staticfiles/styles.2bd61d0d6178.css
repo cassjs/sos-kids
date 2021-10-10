@@ -5,7 +5,7 @@
 
 body {
     font-family: sans-serif;
-    background-image: url(/staticfiles/images/body-image.jpeg);
+    background-image: url(/images/body-image.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     background-color: rgba(255,255,255,0.6);
