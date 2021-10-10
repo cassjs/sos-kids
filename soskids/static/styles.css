@@ -1,3 +1,8 @@
+/* Using whitenoise dependency to serve static files in prod w/ Django app
+(source: http://whitenoise.evans.io/en/stable/)
+If updates made to static files, use CMD '$ python manage.py collectstatic'
+to overwrite the staticfiles directory located in main directory */
+
 * {
     margin: 0;
     padding: 0;
@@ -294,4 +299,77 @@ nav > ul > div > li, nav > ul > div > li > a {
 
 .arrow {
     width: 30px;
+}
+
+/* Quiz */
+.quiz-form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    color: #000;
+}
+#assess {
+    width: 40%;
+    height: 200px;
+    overflow-y: auto;
+    background: #FEFFC8;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding-top: 6%;
+    padding-left: 3%;
+    padding-bottom: 6%;
+    box-shadow: 1px 1px 6px #FEFFC3;
+}
+
+button {
+    width: 20%;
+    font-size: 18px;
+    border: none;
+    background-color: #75D5FD;
+    margin: auto;
+    height: 40px;
+    border-radius: 10px;
+
+}
+
+/* Lesson */
+#lesson-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3%;
+}
+#lesson-description {
+    width: 40%;
+    height: 250px;
+    text-align: justify;
+    overflow-y: auto;
+    background: #FFF;
+    margin: auto;
+    border-radius: 10px;
+    padding: 3%;
+    margin: 20px;
+}
+
+#video-quiz-container {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-top: 30px;
+}
+
+iframe {
+    width: 80%;
+    height: 200px;
+}
+
+.btn-q {
+    width: 70%;
+    font-size: 15px;
+    border: none;
+    background-color: #75D5FD;
+    margin: auto;
+    height: 40px;
+    border-radius: 10px;
 }
