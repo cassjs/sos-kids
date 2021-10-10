@@ -18,7 +18,7 @@ Michel Nzihou
 ## **Getting Started**
 * Clone repository
 
-      $ git clone https://github.com/cassjs/venture-insight.git
+      $ git clone https://github.com/cassjs/sos-kids.git
     
 * Navigate to the project folder
 
