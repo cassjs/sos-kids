@@ -14,6 +14,8 @@ Michel Nzihou
 - Python
 - Django
 - HTML/CSS
+- Docker
+- Azure
 
 ## **Getting Started**
 * Clone repository
