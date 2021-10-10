@@ -3,6 +3,10 @@
     padding: 0;
 }
 
+h1 {
+    color: green;
+}
+
 body {
     font-family: sans-serif;
     background-image: url(/images/body-image.jpg);
