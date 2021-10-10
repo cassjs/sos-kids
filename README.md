@@ -13,7 +13,7 @@ Michel Nzihou
 ## Build
 - Python
 - Django
-- Vanilla HTML/CSS
+- HTML/CSS
 
 ## **Getting Started**
 * Clone repository
