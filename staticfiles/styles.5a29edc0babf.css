@@ -5,7 +5,7 @@
 }
 
 .body-home {
-    background-image: url(/static/images/body-image.jpeg);
+    background-image: url("/static/images/body-image.b4d3a36edfc1.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     background-color: rgba(255,255,255,0.6);
@@ -51,7 +51,7 @@ nav > ul {
     list-style: none;
 }
 
-nav > ul > div > li, nav > ul > div > li > a {
+nav > ul > div > li, a {
     color: black;
     line-height: 100px;
     margin: 0px 20px;
@@ -160,6 +160,8 @@ nav > ul > div > li, nav > ul > div > li > a {
 }
 
 .progress-box {
+    display: flex;
+    flex-direction: row;
     background-color: #FFDE59;
     width: 500px;
     padding: 20px 20px;
@@ -167,18 +169,12 @@ nav > ul > div > li, nav > ul > div > li > a {
 }
 
 .progress-box-content {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-around;
+    margin: 0 auto;
 }
 
 .progress-box-content > h2 {
-    height: 250px;
-    line-height: 250px;
-}
-
-.progress-circle {
-    width: 250px;
+    height: 50px;
+    line-height: 50px;
 }
 
 .learning-box {
@@ -186,44 +182,25 @@ nav > ul > div > li, nav > ul > div > li > a {
     width: 500px;
     display: flex;
     flex-direction: column;
-    text-align: center;
-    padding: 20px 20px;
-    border-radius: 30px;
-}
-
-.learning-box > h2 {
-    margin: 10px;
 }
 
 .learning-path-boxes {
     display: flex;
     flex-direction: row;
     height: 50px;
-    justify-content: space-between;
 }
 
 .learning-path-boxes > p {
     height: 50px;
     line-height: 50px;
-    margin-right: 18px;
-    font-size: 20px;
 }
 
 .learning-path-boxes > a {
     height: 50px;
     line-height: 50px;
     font-size: 16px;
-    margin-left: 18px;
-    font-size: 20px;
-    text-decoration: underline;
-    color: black;
-}
-
-.learning-path-boxes > a:hover {
-    cursor: pointer;
-    color: rgb(128, 128, 128);
 }
 
 .progress-bar {
-    width: 300px;
+    width: 30px;
 }

@@ -1,10 +1,10 @@
 * {
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
 }
 
-body {
-    font-family: sans-serif;
+.body-home {
     background-image: url(/static/images/body-image.jpeg);
     background-repeat: no-repeat;
     background-size: cover;
@@ -51,7 +51,7 @@ nav > ul {
     list-style: none;
 }
 
-nav > ul > div > li, a {
+nav > ul > div > li, nav > ul > div > li > a {
     color: black;
     line-height: 100px;
     margin: 0px 20px;
@@ -103,4 +103,127 @@ nav > ul > div > li, a {
 .welcome-block > button:hover {
     background-color: #e482ad;
     cursor: pointer;
+}
+
+.body-dashboard {
+    background-color: #FF2281;
+}
+
+.dashboard-links {
+    color: white;
+}
+.dashboard-logout {
+    width: 30px;
+    height: auto;
+    vertical-align: middle;
+}
+
+.dashboard-grid {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 50px;
+}
+
+.badge-box {
+    background-color: #D4A7FF;
+    width: 450px;
+    text-align: center;
+    border-radius: 30px;
+    padding: 40px 0px;
+}
+
+.pfp {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.badge-box > h1 {
+    margin-bottom: 10px;
+}
+
+.badge-box > p {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.badge-box > .sport {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.progress-learning-boxes {
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+}
+
+.progress-box {
+    background-color: #FFDE59;
+    width: 500px;
+    padding: 20px 20px;
+    border-radius: 30px;
+}
+
+.progress-box-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.progress-box-content > h2 {
+    height: 250px;
+    line-height: 250px;
+}
+
+.progress-circle {
+    width: 250px;
+}
+
+.learning-box {
+    background-color: #75D5FD;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 20px;
+    border-radius: 30px;
+}
+
+.learning-box > h2 {
+    margin: 10px;
+}
+
+.learning-path-boxes {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    justify-content: space-between;
+}
+
+.learning-path-boxes > p {
+    height: 50px;
+    line-height: 50px;
+    margin-right: 18px;
+    font-size: 20px;
+}
+
+.learning-path-boxes > a {
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    margin-left: 18px;
+    font-size: 20px;
+    text-decoration: underline;
+    color: black;
+}
+
+.learning-path-boxes > a:hover {
+    cursor: pointer;
+    color: rgb(128, 128, 128);
+}
+
+.progress-bar {
+    width: 300px;
 }
