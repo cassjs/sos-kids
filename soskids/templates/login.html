@@ -5,20 +5,38 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>S.O.S. Kids</title>
-    <link rel="stylesheet" type="text/css" href="static/styles.css">
+    <link rel="stylesheet" type="text/css" href="/static/styles.css">
 </head>
 <body>
-    <div>
-        <form method="POST" class="formRegister" action="/login/">
-            {% csrf_token %}
-            <h1 class="headerSpace">Login</h1>
-            <input class="loginInput" type="username" placeholder="Username" name="username" />
-            <br><br>
-            <input class="loginInput" type="password" placeholder="Password" name="password" />
-            <br><br>
-            <button class="signIn">Log In</button>
-            <h6 class="error">{{ error }}</h6>
-        </form>
+    <nav class="nav-main">
+        <ul>
+            <div class="nav-items">
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </div>
+            <div class="nav-logo">
+                <li><a href="#"><img class="logo main" src="/static/images/sos-kids.svg"></a></li>
+            </div>
+            <div class="nav-login">
+                <li><a href="/signup">Sign Up</a></li>
+                <li><p>|</p></li>
+                <li><a href="/login">Login</a></li>
+            </div>
+        </ul>
+    </nav>
+    <div class="content">
+        <div class="welcome-block">
+                <form method="POST" class="formRegister" action="/login/">
+                    {% csrf_token %}
+                    <h1 class="headerSpace">Login</h1>
+                    <input class="loginInput" type="username" placeholder="Username" name="username" />
+                    <br><br>
+                    <input class="loginInput" type="password" placeholder="Password" name="password" />
+                    <br><br>
+                    <button class="signIn">Log In</button>
+                    <h6 class="error">{{ error }}</h6>
+                </form>
+        </div>
     </div>
 </body>
 </html>
