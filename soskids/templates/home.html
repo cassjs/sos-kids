@@ -1,5 +1,27 @@
 {% extends "base.html" %}
 {% block title %}Welcome |{% endblock %}
 {% block content %}
-    <h2>Home/Welcome</h2>
+    <nav class="nav-main">
+        <ul>
+            <div class="nav-items">
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </div>
+            <div class="nav-logo">
+                <li><a href="#"><img class="logo main" src="images/sos-kids.svg"></a></li>
+            </div>
+            <div class="nav-login">
+                <li><a href="#">Sign Up</a></li>
+                <li><p>|</p></li>
+                <li><a href="#">Login</a></li>
+            </div>
+        </ul>
+    </nav>
+    <div class="content">
+        <div class="welcome-block">
+            <h1>Welcome!</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus auctor metus vel risus lobortis tincidunt. Mauris sed convallis tellus, ut fermentum magna. Morbi eleifend congue massa, sit amet euismod metus.</p>
+            <button>Sign Up</button>
+        </div>
+    </div>
 {% endblock %}
