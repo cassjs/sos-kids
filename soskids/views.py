@@ -47,3 +47,6 @@ def logout(request):
 
 def lesson(request):
     return render(request, 'lesson.html')
+
+def quiz(request):
+    return render(request, 'quiz.html')

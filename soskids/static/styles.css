@@ -148,7 +148,7 @@ nav > ul > div > li, a {
 }
 
 
-/* lesson */
+/* Quiz */
 form {
     display: flex;
     flex-direction: column;
@@ -178,4 +178,45 @@ button {
     height: 40px;
     border-radius: 10px;
 
+}
+
+/* Lesson */
+#lesson-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 3%;
+}
+#lesson-description {
+    width: 40%;
+    height: 250px;
+    text-align: justify;
+    overflow-y: auto;
+    background: #FFF;
+    margin: auto;
+    border-radius: 10px;
+    padding: 3%;
+    margin: 20px;
+}
+
+#video-quiz-container {
+    display: flex;
+    flex-direction: column;
+    width: 40%;
+    margin-top: 30px;
+}
+
+iframe {
+    width: 80%;
+    height: 200px;
+}
+
+.btn-q {
+    width: 70%;
+    font-size: 15px;
+    border: none;
+    background-color: #75D5FD;
+    margin: auto;
+    height: 40px;
+    border-radius: 10px;
 }
