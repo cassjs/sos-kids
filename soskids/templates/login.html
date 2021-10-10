@@ -26,16 +26,16 @@
     </nav>
     <div class="content">
         <div class="welcome-block">
-                <form method="POST" class="formRegister" action="/login/">
-                    {% csrf_token %}
-                    <h1 class="headerSpace">Login</h1>
-                    <input class="loginInput" type="username" placeholder="Username" name="username" />
-                    <br><br>
-                    <input class="loginInput" type="password" placeholder="Password" name="password" />
-                    <br><br>
-                    <button class="signIn">Log In</button>
-                    <h6 class="error">{{ error }}</h6>
-                </form>
+            <form method="POST" class="formRegister" action="/login/">
+                {% csrf_token %}
+                <h1 class="headerSpace">Login</h1>
+                <input class="loginInput" type="username" placeholder="Username" name="username" />
+                <br><br>
+                <input class="loginInput" type="password" placeholder="Password" name="password" />
+                <br><br>
+                <button class="signIn">Log In</button>
+                <h6 class="error">{{ error }}</h6>
+            </form>
         </div>
     </div>
 </body>

@@ -5,7 +5,7 @@
 }
 
 .body-home {
-    background-image: url(/static/images/body-image.jpeg);
+    background-image: url("/static/images/body-image.b4d3a36edfc1.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     background-color: rgba(255,255,255,0.6);
@@ -258,7 +258,6 @@ nav > ul > div > li, nav > ul > div > li > a {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
-    padding: 0px 40px;
 }
 
 .resources-box > ul > li > a {
