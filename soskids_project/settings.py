@@ -11,8 +11,8 @@ from pathlib import Path
 # import dotenv 
 import os
 
-# Temporary addition relating to django_heroku
-import django_heroku
+# # Temporary addition relating to django_heroku
+# import django_heroku
 
 # Build paths inside the project like this: BASE_DIR / 'subdir'.
 BASE_DIR = Path(__file__).resolve().parent.parent
@@ -151,5 +151,5 @@ MEDIA_ROOT = os.path.join(BASE_DIR, '/static/images')
 
 DEFAULT_AUTO_FIELD = 'django.db.models.BigAutoField'
 
-# Temporary addition relating to django_heroku dependency
-django_heroku.settings(locals()) 
+# # Temporary addition relating to django_heroku dependency
+# django_heroku.settings(locals()) 

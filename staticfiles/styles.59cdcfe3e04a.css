@@ -10,7 +10,7 @@ to overwrite the staticfiles directory located in main directory */
 }
 
 .body-home {
-    background-image: url(/static/images/body-image.jpeg);
+    background-image: url("/static/images/body-image.b4d3a36edfc1.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     background-color: rgba(255,255,255,0.6);
@@ -129,6 +129,7 @@ nav > ul > div > li, nav > ul > div > li > a {
 
 .welcome-block > form > input {
     margin-top: 30px;
+    text-align: center;
 }
 
 .welcome-block > form > input {
@@ -302,7 +303,7 @@ nav > ul > div > li, nav > ul > div > li > a {
 }
 
 /* Quiz */
-.quiz-form {
+form {
     display: flex;
     flex-direction: column;
     margin-bottom: 30px;

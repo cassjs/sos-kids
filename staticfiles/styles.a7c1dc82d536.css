@@ -6,10 +6,10 @@ to overwrite the staticfiles directory located in main directory */
 * {
     margin: 0;
     padding: 0;
+    font-family: sans-serif;
 }
 
-body {
-    font-family: sans-serif;
+.body-home {
     background-image: url("/static/images/body-image.b4d3a36edfc1.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
@@ -56,7 +56,7 @@ nav > ul {
     list-style: none;
 }
 
-nav > ul > div > li, a {
+nav > ul > div > li, nav > ul > div > li > a {
     color: black;
     line-height: 100px;
     margin: 0px 20px;
@@ -110,11 +110,15 @@ nav > ul > div > li, a {
     cursor: pointer;
 }
 
-.user-block > button {
+.body-dashboard {
+    background-color: #FF2281;
+}
+
+.welcome-block > form > button {
     margin: 20px;
     margin-top: 50px;
     padding: 10px 20px;
-    background-color: #B76CFD;
+    background-color: #FF2281;
     color: white;
     width: 150px;
     height: 50px;
@@ -123,30 +127,179 @@ nav > ul > div > li, a {
     font-size: 18px;
 }
 
-.user-block > button:hover {
-    background-color: #d1a9f7;
-    cursor: pointer;
+.welcome-block > form > input {
+    margin-top: 30px;
 }
 
-.user-block {
-    background-color: #75d4fda6;
-    height: 50vh;
-    margin: 0 auto;
-    padding: 30px 50px;
-    text-align: center;
-    width: 30%;
-    border-radius: 30px;
+.welcome-block > form > input {
+    padding: 10px 20px;
+    width: 300px;
+    height: 20px;
+    border-radius: 20px;
     border: 2px solid black;
+    font-size: 18px;
 }
 
-.user-block > h1 {
-    margin: 20px
+.dashboard-links {
+    color: white;
+}
+.dashboard-logout {
+    width: 30px;
+    height: auto;
+    vertical-align: middle;
 }
 
-.user-block > p {
-    line-height: 40px;
+.dashboard-grid {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    column-gap: 50px;
 }
 
+.badge-box {
+    background-color: #D4A7FF;
+    width: 450px;
+    text-align: center;
+    border-radius: 30px;
+    padding: 40px 0px;
+}
+
+.pfp {
+    width: 150px;
+    margin-bottom: 20px;
+}
+
+.badge-box > h1 {
+    margin-bottom: 10px;
+}
+
+.badge-box > p {
+    font-size: 20px;
+    margin-bottom: 10px;
+}
+
+.badge-box > .sport {
+    font-size: 24px;
+    font-weight: bold;
+}
+
+.progress-learning-boxes {
+    display: flex;
+    flex-direction: column;
+    row-gap: 50px;
+}
+
+.progress-box {
+    background-color: #FFDE59;
+    width: 500px;
+    padding: 20px 20px;
+    border-radius: 30px;
+}
+
+.progress-box-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.progress-box-content > h2 {
+    height: 250px;
+    line-height: 250px;
+}
+
+.progress-circle {
+    width: 250px;
+}
+
+.learning-box {
+    background-color: #75D5FD;
+    width: 500px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 20px 20px;
+    border-radius: 30px;
+}
+
+.learning-box > h2 {
+    margin: 10px;
+}
+
+.learning-path-boxes {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    justify-content: space-between;
+}
+
+.learning-path-boxes > p {
+    height: 50px;
+    line-height: 50px;
+    margin-right: 18px;
+    font-size: 20px;
+}
+
+.learning-path-boxes > a {
+    height: 50px;
+    line-height: 50px;
+    font-size: 16px;
+    margin-left: 18px;
+    font-size: 20px;
+    text-decoration: underline;
+    color: black;
+}
+
+.learning-path-boxes > a:hover {
+    cursor: pointer;
+    color: rgb(128, 128, 128);
+}
+
+.progress-bar {
+    width: 300px;
+}
+
+.learning-path-progress-boxes {
+    display: flex;
+    flex-direction: row;
+    height: 50px;
+    justify-content: space-evenly;
+}
+
+.learning-path-progress-boxes > p {
+    height: 50px;
+    line-height: 50px;
+    margin-right: 18px;
+    font-size: 20px;
+}
+
+.resources-box {
+    width: 450px;
+    text-align: center;
+    padding: 40px 0px;
+}
+
+.resources-box > ul > li {
+    background-color: #D4A7FF;
+    border-radius: 30px;
+    list-style: none;
+    margin: 20px 0px;
+    height: 50px;
+    line-height: 50px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 0px 40px;
+}
+
+.resources-box > ul > li > a {
+    color: white;
+    text-decoration: none;
+}
+
+.arrow {
+    width: 30px;
+}
 
 /* Quiz */
 form {
