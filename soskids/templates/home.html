@@ -1,5 +1,35 @@
-{% extends "base.html" %}
-{% block title %}Welcome |{% endblock %}
-{% block content %}
-    <h2>Home/Welcome</h2>
-{% endblock %}
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S.O.S. Kids</title>
+    <link rel="stylesheet" type="text/css" href="static/styles.css">
+</head>
+<body>
+    <nav class="nav-main">
+        <ul>
+            <div class="nav-items">
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </div>
+            <div class="nav-logo">
+                <li><a href="#"><img class="logo main" src="/static/images/sos-kids.svg"></a></li>
+            </div>
+            <div class="nav-login">
+                <li><a href="/signup">Sign Up</a></li>
+                <li><p>|</p></li>
+                <li><a href="/login">Login</a></li>
+            </div>
+        </ul>
+    </nav>
+    <div class="content">
+        <div class="welcome-block">
+            <h1>Welcome!</h1>
+            <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus auctor metus vel risus lobortis tincidunt. Mauris sed convallis tellus, ut fermentum magna. Morbi eleifend congue massa, sit amet euismod metus.</p>
+            <button>Sign Up</button>
+        </div>
+    </div>
+</body>
+</html>

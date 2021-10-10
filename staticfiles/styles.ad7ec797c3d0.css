@@ -10,7 +10,7 @@ to overwrite the staticfiles directory located in main directory */
 
 body {
     font-family: sans-serif;
-    background-image: url(/static/images/body-image.jpeg);
+    background-image: url("/static/images/body-image.b4d3a36edfc1.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     background-color: rgba(255,255,255,0.6);
@@ -110,7 +110,7 @@ nav > ul > div > li, a {
     cursor: pointer;
 }
 
-.user-block > button {
+.user-form > button {
     margin: 20px;
     margin-top: 50px;
     padding: 10px 20px;
@@ -123,26 +123,7 @@ nav > ul > div > li, a {
     font-size: 18px;
 }
 
-.user-block > button:hover {
-    background-color: #d1a9f7;
+.user-form > button:hover {
+    background-color: #B76CFD;
     cursor: pointer;
-}
-
-.user-block {
-    background-color: #75d4fda6;
-    height: 50vh;
-    margin: 0 auto;
-    padding: 30px 50px;
-    text-align: center;
-    width: 30%;
-    border-radius: 30px;
-    border: 2px solid black;
-}
-
-.user-block > h1 {
-    margin: 20px
-}
-
-.user-block > p {
-    line-height: 40px;
 }

@@ -1,17 +1,56 @@
-{% extends "base.html" %}
-{% block title %}Sign Up |{% endblock %}
-{% block content %}
-    <div>
-        <form method="POST" action="/signup/">
-            {% csrf_token %}
-            <h1>Sign Up</h1>
-            <input type="username" placeholder="Username" name="username" />
-            <br><br>
-            <input type="password" placeholder="Password" name="password" />
-            <br><br>
-            <button name="Create User">Sign up</button>
-            <h6>{{ error }}</h6>
-        </form>
-    </div>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>S.O.S. Kids</title>
+    <link rel="stylesheet" type="text/css" href="/static/styles.css">
+</head>
+<body>
+    <nav class="nav-main">
+        <ul>
+            <div class="nav-items">
+                <li><a href="about.html">About</a></li>
+                <li><a href="#">Contact</a></li>
+            </div>
+            <div class="nav-logo">
+                <li><a href="#"><img class="logo main" src="/static/images/sos-kids.svg"></a></li>
+            </div>
+            <div class="nav-login">
+                <li><a href="/signup">Sign Up</a></li>
+                <li><p>|</p></li>
+                <li><a href="/login">Login</a></li>
+            </div>
+        </ul>
+    </nav>
+    <div class="content">
+        <div class="user-block">
+            <form method="POST" action="/signup/">
+                {% csrf_token %}
+                <h1>Sign Up</h1>
+                <input type="username" placeholder="Username" name="username" />
+                <br><br>
+                <input type="password" placeholder="Password" name="password" />
+                <br><br>
+                
+                <p>Join as:</p>
+                 <input type="radio" name="join_option" value="Parent">
+                 <label for="html">Parent </label><br>
+                 <input type="radio" name="join_option" value="Child">
+                 <label for="css">Child </label>
 
-{% endblock %}
+                <p>Age Range:</p>
+                <input type="radio" name="agerange_option" value="13 - 15 yrs">
+                <label for="html">13 - 15 yrs</label><br>
+                <input type="radio" name="agerange_option" value="16 - 18 yrs">
+                <label for="css">16 - 18 yrs</label>
+                <br><br>
+
+                <button name="Create User">Sign up</button>
+                <h6>{{ error }}</h6>
+            </form>
+        </div>
+    </div>
+</body>
+</html>
