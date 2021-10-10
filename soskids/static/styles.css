@@ -1,3 +1,8 @@
+/* Using whitenoise dependency to serve static files in prod w/ Django app
+(source: http://whitenoise.evans.io/en/stable/)
+If updates made to static files, use CMD '$ python manage.py collectstatic'
+to overwrite the staticfiles directory located in main directory */
+
 * {
     margin: 0;
     padding: 0;
@@ -103,4 +108,41 @@ nav > ul > div > li, a {
 .welcome-block > button:hover {
     background-color: #e482ad;
     cursor: pointer;
+}
+
+.user-block > button {
+    margin: 20px;
+    margin-top: 50px;
+    padding: 10px 20px;
+    background-color: #B76CFD;
+    color: white;
+    width: 150px;
+    height: 50px;
+    border-radius: 20px;
+    border: 2px solid black;
+    font-size: 18px;
+}
+
+.user-block > button:hover {
+    background-color: #d1a9f7;
+    cursor: pointer;
+}
+
+.user-block {
+    background-color: #75d4fda6;
+    height: 50vh;
+    margin: 0 auto;
+    padding: 30px 50px;
+    text-align: center;
+    width: 30%;
+    border-radius: 30px;
+    border: 2px solid black;
+}
+
+.user-block > h1 {
+    margin: 20px
+}
+
+.user-block > p {
+    line-height: 40px;
 }

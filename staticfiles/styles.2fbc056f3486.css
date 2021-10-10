@@ -10,7 +10,7 @@ to overwrite the staticfiles directory located in main directory */
 
 body {
     font-family: sans-serif;
-    background-image: url(/static/images/body-image.jpeg);
+    background-image: url("/static/images/body-image.b4d3a36edfc1.jpeg");
     background-repeat: no-repeat;
     background-size: cover;
     background-color: rgba(255,255,255,0.6);
