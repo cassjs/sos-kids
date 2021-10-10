@@ -44,3 +44,6 @@ def dashboard(request):
 def logout(request):
     auth.logout(request)
     return redirect('/')
+
+def lesson(request):
+    return render(request, 'lesson.html')

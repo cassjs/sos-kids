@@ -146,3 +146,36 @@ nav > ul > div > li, a {
 .user-block > p {
     line-height: 40px;
 }
+
+
+/* lesson */
+form {
+    display: flex;
+    flex-direction: column;
+    margin-bottom: 30px;
+    color: #000;
+}
+#assess {
+    width: 40%;
+    height: 200px;
+    overflow-y: auto;
+    background: #FEFFC8;
+    margin: auto;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    padding-top: 6%;
+    padding-left: 3%;
+    padding-bottom: 6%;
+    box-shadow: 1px 1px 6px #FEFFC3;
+}
+
+button {
+    width: 20%;
+    font-size: 18px;
+    border: none;
+    background-color: #75D5FD;
+    margin: auto;
+    height: 40px;
+    border-radius: 10px;
+
+}
